@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F86A7D3D1854DB6800D4202B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86A7D3C1854DB6800D4202B /* Foundation.framework */; };
+		F86A7D3F1854DB6800D4202B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86A7D3E1854DB6800D4202B /* CoreGraphics.framework */; };
+		F86A7D411854DB6800D4202B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86A7D401854DB6800D4202B /* UIKit.framework */; };
+		F8F5BB771854EC4C00348242 /* NZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB661854EC4C00348242 /* NZViewController.m */; };
+		F8F5BB791854EC4C00348242 /* NZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB6A1854EC4C00348242 /* NZAppDelegate.m */; };
+		F8F5BB7B1854EC4C00348242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F5BB6E1854EC4C00348242 /* Main.storyboard */; };
+		F8F5BB7C1854EC4C00348242 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F5BB701854EC4C00348242 /* Images.xcassets */; };
+		F8F5BB7D1854EC4C00348242 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F5BB721854EC4C00348242 /* InfoPlist.strings */; };
+		F8F5BB7E1854EC4C00348242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB741854EC4C00348242 /* main.m */; };
+		F8F5BB851854EC9800348242 /* NSBundle+AlphaVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB821854EC9800348242 /* NSBundle+AlphaVersion.m */; };
+		F8F5BB861854EC9800348242 /* NZBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB841854EC9800348242 /* NZBundle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F86A7D391854DB6800D4202B /* NZBundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZBundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86A7D3C1854DB6800D4202B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F86A7D3E1854DB6800D4202B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F86A7D401854DB6800D4202B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F86A7D5B1854DB6800D4202B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8F5BB651854EC4C00348242 /* NZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZViewController.h; sourceTree = "<group>"; };
+		F8F5BB661854EC4C00348242 /* NZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZViewController.m; sourceTree = "<group>"; };
+		F8F5BB691854EC4C00348242 /* NZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAppDelegate.h; sourceTree = "<group>"; };
+		F8F5BB6A1854EC4C00348242 /* NZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAppDelegate.m; sourceTree = "<group>"; };
+		F8F5BB6F1854EC4C00348242 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8F5BB701854EC4C00348242 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8F5BB731854EC4C00348242 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8F5BB741854EC4C00348242 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8F5BB751854EC4C00348242 /* NZBundle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NZBundle-Info.plist"; sourceTree = "<group>"; };
+		F8F5BB761854EC4C00348242 /* NZBundle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NZBundle-Prefix.pch"; sourceTree = "<group>"; };
+		F8F5BB811854EC9800348242 /* NSBundle+AlphaVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+AlphaVersion.h"; sourceTree = "<group>"; };
+		F8F5BB821854EC9800348242 /* NSBundle+AlphaVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+AlphaVersion.m"; sourceTree = "<group>"; };
+		F8F5BB831854EC9800348242 /* NZBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZBundle.h; sourceTree = "<group>"; };
+		F8F5BB841854EC9800348242 /* NZBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZBundle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F86A7D361854DB6800D4202B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86A7D3F1854DB6800D4202B /* CoreGraphics.framework in Frameworks */,
+				F86A7D411854DB6800D4202B /* UIKit.framework in Frameworks */,
+				F86A7D3D1854DB6800D4202B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F86A7D301854DB6800D4202B = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB621854EC4C00348242 /* Example */,
+				F86A7D3B1854DB6800D4202B /* Frameworks */,
+				F8F5BB801854EC9800348242 /* NZBundle */,
+				F86A7D3A1854DB6800D4202B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F86A7D3A1854DB6800D4202B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F86A7D391854DB6800D4202B /* NZBundle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F86A7D3B1854DB6800D4202B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F86A7D3C1854DB6800D4202B /* Foundation.framework */,
+				F86A7D3E1854DB6800D4202B /* CoreGraphics.framework */,
+				F86A7D401854DB6800D4202B /* UIKit.framework */,
+				F86A7D5B1854DB6800D4202B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8F5BB621854EC4C00348242 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB631854EC4C00348242 /* Classes */,
+				F8F5BB701854EC4C00348242 /* Images.xcassets */,
+				F8F5BB711854EC4C00348242 /* SupportingFiles */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		F8F5BB631854EC4C00348242 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB691854EC4C00348242 /* NZAppDelegate.h */,
+				F8F5BB6A1854EC4C00348242 /* NZAppDelegate.m */,
+				F8F5BB641854EC4C00348242 /* Controllers */,
+				F8F5BB6D1854EC4C00348242 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8F5BB641854EC4C00348242 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB651854EC4C00348242 /* NZViewController.h */,
+				F8F5BB661854EC4C00348242 /* NZViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F8F5BB6D1854EC4C00348242 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB6E1854EC4C00348242 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8F5BB711854EC4C00348242 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB721854EC4C00348242 /* InfoPlist.strings */,
+				F8F5BB741854EC4C00348242 /* main.m */,
+				F8F5BB751854EC4C00348242 /* NZBundle-Info.plist */,
+				F8F5BB761854EC4C00348242 /* NZBundle-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F8F5BB801854EC9800348242 /* NZBundle */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5BB811854EC9800348242 /* NSBundle+AlphaVersion.h */,
+				F8F5BB821854EC9800348242 /* NSBundle+AlphaVersion.m */,
+				F8F5BB831854EC9800348242 /* NZBundle.h */,
+				F8F5BB841854EC9800348242 /* NZBundle.m */,
+			);
+			path = NZBundle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F86A7D381854DB6800D4202B /* NZBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86A7D6B1854DB6900D4202B /* Build configuration list for PBXNativeTarget "NZBundle" */;
+			buildPhases = (
+				F86A7D351854DB6800D4202B /* Sources */,
+				F86A7D361854DB6800D4202B /* Frameworks */,
+				F86A7D371854DB6800D4202B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NZBundle;
+			productName = NZBundle;
+			productReference = F86A7D391854DB6800D4202B /* NZBundle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F86A7D311854DB6800D4202B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NZ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "No Zebra Network";
+			};
+			buildConfigurationList = F86A7D341854DB6800D4202B /* Build configuration list for PBXProject "NZBundle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F86A7D301854DB6800D4202B;
+			productRefGroup = F86A7D3A1854DB6800D4202B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F86A7D381854DB6800D4202B /* NZBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F86A7D371854DB6800D4202B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F5BB7B1854EC4C00348242 /* Main.storyboard in Resources */,
+				F8F5BB7D1854EC4C00348242 /* InfoPlist.strings in Resources */,
+				F8F5BB7C1854EC4C00348242 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F86A7D351854DB6800D4202B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F5BB7E1854EC4C00348242 /* main.m in Sources */,
+				F8F5BB851854EC9800348242 /* NSBundle+AlphaVersion.m in Sources */,
+				F8F5BB791854EC4C00348242 /* NZAppDelegate.m in Sources */,
+				F8F5BB771854EC4C00348242 /* NZViewController.m in Sources */,
+				F8F5BB861854EC9800348242 /* NZBundle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8F5BB6E1854EC4C00348242 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F5BB6F1854EC4C00348242 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8F5BB721854EC4C00348242 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F5BB731854EC4C00348242 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F86A7D691854DB6900D4202B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F86A7D6A1854DB6900D4202B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F86A7D6C1854DB6900D4202B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/SupportingFiles/NZBundle-Prefix.pch";
+				INFOPLIST_FILE = "Example/SupportingFiles/NZBundle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F86A7D6D1854DB6900D4202B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/SupportingFiles/NZBundle-Prefix.pch";
+				INFOPLIST_FILE = "Example/SupportingFiles/NZBundle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F86A7D341854DB6800D4202B /* Build configuration list for PBXProject "NZBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86A7D691854DB6900D4202B /* Debug */,
+				F86A7D6A1854DB6900D4202B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86A7D6B1854DB6900D4202B /* Build configuration list for PBXNativeTarget "NZBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86A7D6C1854DB6900D4202B /* Debug */,
+				F86A7D6D1854DB6900D4202B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F86A7D311854DB6800D4202B /* Project object */;
+}
