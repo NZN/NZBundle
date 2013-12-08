@@ -44,6 +44,10 @@ You can also customize the version name as follows: (It is recommended to add th
 
 To enable the logs in debug/release mode, add `#define NZDEBUG` at `*-Prefix.pch` file in your project.
 
+## License
+
+This code is distributed under the terms and conditions of the [MIT license](LICENSE).
+
 ## Change-log
 
 A brief summary of each NZBundle release can be found on the [wiki](https://github.com/NZN/NZBundle/wiki/Change-log).
