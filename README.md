@@ -34,9 +34,9 @@ After installing it through CocoaPods or copy the files to your project, you wil
 
 The NZBundle overrides the `+(void)load;` method of NSObject class, which is called every time the application starts. Therefore, by default the name of your version will automatically change.
 
-For example, if the version of your app is `1.0.0`, your debug/release version will be change to `1.0.0a alpha` alpha and your distribution version `1.0.0a`.
+For example, if the version of your app is `1.0.0`, your debug/release version will be change to `1.0.0a alpha` and your distribution version `1.0.0a`.
 
-You can also customize the version name as follows: (It is recommended to add this method call at `application:willFinishLaunchingWithOptions` of your application.)
+You can also customize the version name as follows: (It is recommended add this line at `application:willFinishLaunchingWithOptions` of your application.)
 
 ```objective-c
 [[NSBundle mainBundle] setupShortVersionForDevelopment:@"dev" andDistribution:@"prd"];
