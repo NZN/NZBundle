@@ -25,7 +25,7 @@ You will need LLVM 3.0 or later in order to build NZBundle.
 
 Alternatively you can directly add source files to your project.
 
-1. Download the latest code version or add the repository as a git submodule to your git-tracked project.
+1. Download the [latest code version](https://github.com/NZN/NZBundle/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
 2. Open your project in Xcode, then drag and drop all files at NZBundle folder onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 
 ## Usage
