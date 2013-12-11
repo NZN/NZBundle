@@ -4,6 +4,8 @@ NZBundle is a NSBundle extension. Its purpose is to customize the values ​​o
 
 It can be used, for example, to add some alphanumeric values ​​in the version of the application APIs that are used by track view analysis.
 
+[![Build Status](https://api.travis-ci.org/NZN/NZBundle.png)](https://api.travis-ci.org/NZN/NZBundle.png)
+
 ## Requirements
 
 NZBundle works on any iOS version and is compatible with both ARC and non-ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
