@@ -8,7 +8,7 @@ It can be used, for example, to add some alphanumeric values ​​in the versio
 
 ## Requirements
 
-NZBundle works on any iOS version and is compatible with both ARC and non-ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
+NZBundle works on iOS 5.0+ version and is compatible with ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
 * Foundation.framework
 
@@ -20,7 +20,7 @@ You will need LLVM 3.0 or later in order to build NZBundle.
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZBundle to your project.
 
-* Add a pod entry for NZBundle to your Podfile `pod 'NZBundle', '~> 0.0.1'`
+* Add a pod entry for NZBundle to your Podfile `pod 'NZBundle', :git => 'https://github.com/NZN/NZBundle'`
 * Install the pod(s) by running `pod install`.
 
 ### Source files
@@ -28,7 +28,7 @@ You will need LLVM 3.0 or later in order to build NZBundle.
 Alternatively you can directly add source files to your project.
 
 1. Download the [latest code version](https://github.com/NZN/NZBundle/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
-2. Open your project in Xcode, then drag and drop all files at NZBundle folder onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
+2. Open your project in Xcode, then drag and drop all files at `NZBundle` folder onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 
 ## Usage
 
