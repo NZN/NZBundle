@@ -20,7 +20,7 @@ You will need LLVM 3.0 or later in order to build NZBundle.
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZBundle to your project.
 
-* Add a pod entry for NZBundle to your Podfile `pod 'NZBundle', :git => 'https://github.com/NZN/NZBundle'`
+* Add a pod entry for NZBundle to your Podfile `pod 'NZBundle', '~> 0.0.3'`
 * Install the pod(s) by running `pod install`.
 
 ### Source files
