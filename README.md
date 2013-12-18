@@ -5,6 +5,8 @@ NZBundle is a NSBundle extension. Its purpose is to customize the values ​​o
 It can be used, for example, to add some alphanumeric values ​​in the version of the application APIs that are used by track view analysis.
 
 [![Build Status](https://api.travis-ci.org/NZN/NZBundle.png)](https://api.travis-ci.org/NZN/NZBundle.png)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/NZBundle/badge.png)](http://beta.cocoapods.org/?q=name%3Anzbundle%2A)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/p/NZBundle/badge.png)](http://beta.cocoapods.org/?q=name%3Anzbundle%2A)
 
 ## Requirements
 
