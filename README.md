@@ -1,4 +1,4 @@
-#NZBundle
+#NZBundle ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
 NZBundle is a NSBundle extension. Its purpose is to customize the values ​​of the Info.plist file when they are loaded into memory.
 
