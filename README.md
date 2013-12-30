@@ -1,6 +1,10 @@
 #NZBundle ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
-NZBundle is a NSBundle extension. Its purpose is to customize the values ​​of the Info.plist file when they are loaded into memory.
+<p align="center">
+  <img src="http://s24.postimg.org/r7y1jch1h/NZBundle.png" alt="NZBundle" title="NZBundle" width="320" height="568">
+</p>
+
+Easily access and manipulate the the Info.plist file of your project.
 
 It can be used, for example, to add some alphanumeric values ​​in the version of the application APIs that are used by track view analysis.
 
@@ -22,8 +26,17 @@ You will need LLVM 3.0 or later in order to build NZBundle.
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZBundle to your project.
 
-* Add a pod entry for NZBundle to your Podfile `pod 'NZBundle', '~> 0.0.3'`
-* Install the pod(s) by running `pod install`.
+* Add a pod entry for NZBundle to your Podfile:
+
+```
+pod 'NZBundle'
+```
+
+* Install the pod(s) by running:
+
+```
+pod install
+```
 
 ### Source files
 
@@ -34,17 +47,45 @@ Alternatively you can directly add source files to your project.
 
 ## Usage
 
-After installing it through CocoaPods or copy the files to your project, you will already be using the NZBundle.
-
-The NZBundle overrides the `+(void)load;` method of NSObject class, which is called every time the application starts. Therefore, by default the name of your version will automatically change.
-
-For example, if the version of your app is `1.0.0`, your debug/release version will be change to `1.0.0a alpha` and your distribution version `1.0.0a`.
-
-You can also customize the version name as follows: (It is recommended add this line at `application:willFinishLaunchingWithOptions` of your application.)
+* Setup version name with default values (a = Apple):
+	* Debug / Relase: `X.X.Xa alpha`
+	* Distribution: `X.X.Xa`
 
 ```objective-c
-[[NSBundle mainBundle] setupShortVersionForDevelopment:@"dev" andDistribution:@"prd"];
+#import "NZBundle.h"
+...
+[NZBundle setupShortVersion];
 ```
+
+* Setup custom version name:
+	
+```objective-c
+#import "NZBundle.h"
+...
+[NZBundle setShortVersionForDevelopment:@"dev" andDistribution:@"prd"];
+```
+
+* Acess `Info.plist` values:
+	
+```objective-c
+#import "NZBundle.h"
+...
+
+// CFBundleInitialShortVersionString (custom key)
+// this key is created to save initial short value
+NSString shortVersion = [NZBundle initialShortVersion];
+
+// CFBundleShortVersionString
+NSString shortVersion = [NZBundle shortVersion];
+
+// UIMainStoryboardFile
+NSString phoneStoryboard = [NZBundle mainStoryboardFileName];
+
+// UIMainStoryboardFile~ipad
+NSString padStoryboard = [NZBundle mainStoryboardFilePadName];
+```
+
+### Log
 
 To enable the logs in debug/release mode, add `#define NZDEBUG` at `*-Prefix.pch` file in your project.
 
