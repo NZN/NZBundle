@@ -27,9 +27,14 @@
 
 @interface NZBundle : NSBundle
 
-+ (void)setShortVersionForDevelopment:(NSString *)development
-                      andDistribution:(NSString *)distribution;
++ (NSString *)initialShortVersion;
 
++ (NSString *)mainStoryboardFileName;
++ (NSString *)mainStoryboardFilePadName;
+
++ (void)setShortVersionForDevelopment:(NSString *)development andDistribution:(NSString *)distribution;
 + (void)setupShortVersion;
+
++ (NSString *)shortVersion;
 
 @end

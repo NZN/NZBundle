@@ -8,26 +8,27 @@
 
 #import "NZBundle.h"
 #import "NSBundle+AlphaVersion.h"
+#import "NSBundle+Storyboards.h"
 
 @implementation NZBundle
 
 #pragma mark -
-#pragma mark - NSBundle
+#pragma mark - Public methods
 
-+ (void)load
++ (NSString *)initialShortVersion
 {
-#ifdef NZDEBUG
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-#endif
-    
-    [super load];
-    
-    [[NSBundle mainBundle] saveInitialShortVersion];
-    [self setupShortVersion];
+    return [[NSBundle mainBundle] initialShortVersion];
 }
 
-#pragma mark -
-#pragma mark - Public methods
++ (NSString *)mainStoryboardFileName
+{
+    return [[NSBundle mainBundle] mainStoryboardFileName];
+}
+
++ (NSString *)mainStoryboardFilePadName
+{
+    return [[NSBundle mainBundle] mainStoryboardFilePadName];
+}
 
 + (void)setShortVersionForDevelopment:(NSString *)development andDistribution:(NSString *)distribution
 {
@@ -37,6 +38,11 @@
 + (void)setupShortVersion
 {
     [[NSBundle mainBundle] setupShortVersion];
+}
+
++ (NSString *)shortVersion
+{
+    return [[NSBundle mainBundle] shortVersion];
 }
 
 @end
