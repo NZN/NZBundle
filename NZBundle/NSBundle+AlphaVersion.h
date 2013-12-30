@@ -25,16 +25,13 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const kCFBundleShortVersionString;
-extern NSString *const kCFBundleInitialShortVersionString;
-
 @interface NSBundle (AlphaVersion)
 
-- (void)saveInitialShortVersion;
+- (NSString *)initialShortVersion;
 
 - (void)setupShortVersion;
+- (void)setupShortVersionForDevelopment:(NSString *)development andDistribution:(NSString *)distribution;
 
-- (void)setupShortVersionForDevelopment:(NSString *)development
-                        andDistribution:(NSString *)distribution;
+- (NSString *)shortVersion;
 
 @end
