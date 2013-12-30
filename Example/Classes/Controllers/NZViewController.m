@@ -7,12 +7,14 @@
 //
 
 #import "NZViewController.h"
-#import "NSBundle+AlphaVersion.h"
+#import "NZBundle.h"
 
 @interface NZViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *lbDefault;
 @property (strong, nonatomic) IBOutlet UILabel *lbCustomized;
+@property (strong, nonatomic) IBOutlet UILabel *lbStoryboardPhone;
+@property (strong, nonatomic) IBOutlet UILabel *lbStoryboardPad;
 
 - (IBAction)defaultClicked;
 - (IBAction)customizedClicked;
@@ -29,6 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.lbStoryboardPhone.text = [NZBundle mainStoryboardFileName];
+    self.lbStoryboardPad.text = [NZBundle mainStoryboardFilePadName];
+    
     [self refreshData];
 }
 
@@ -37,15 +43,16 @@
 
 - (IBAction)customizedClicked
 {
-    [[NSBundle mainBundle] setupShortVersionForDevelopment:[self randomicVersion]
-                                           andDistribution:[self randomicVersion]];
+    [NZBundle setShortVersionForDevelopment:[self randomicVersion]
+                            andDistribution:[self randomicVersion]];
     
     [self refreshData];
 }
 
 - (IBAction)defaultClicked
 {
-    [[NSBundle mainBundle] setupShortVersion];
+    [NZBundle setupShortVersion];
+    
     [self refreshData];
 }
 
@@ -67,8 +74,8 @@
 
 - (void)refreshData
 {
-    self.lbDefault.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:kCFBundleInitialShortVersionString];
-    self.lbCustomized.text = [[[NSBundle mainBundle] infoDictionary] objectForKey:kCFBundleShortVersionString];
+    self.lbDefault.text = [NZBundle initialShortVersion];
+    self.lbCustomized.text = [NZBundle shortVersion];
 }
 
 @end
