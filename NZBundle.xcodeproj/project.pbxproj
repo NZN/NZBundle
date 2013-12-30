@@ -10,6 +10,7 @@
 		F86A7D3D1854DB6800D4202B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86A7D3C1854DB6800D4202B /* Foundation.framework */; };
 		F86A7D3F1854DB6800D4202B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86A7D3E1854DB6800D4202B /* CoreGraphics.framework */; };
 		F86A7D411854DB6800D4202B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86A7D401854DB6800D4202B /* UIKit.framework */; };
+		F8C106E01871B7DD005465A0 /* NSBundle+Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C106DF1871B7DD005465A0 /* NSBundle+Storyboards.m */; };
 		F8F5BB771854EC4C00348242 /* NZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB661854EC4C00348242 /* NZViewController.m */; };
 		F8F5BB791854EC4C00348242 /* NZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5BB6A1854EC4C00348242 /* NZAppDelegate.m */; };
 		F8F5BB7B1854EC4C00348242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F5BB6E1854EC4C00348242 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		F86A7D3E1854DB6800D4202B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F86A7D401854DB6800D4202B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F86A7D5B1854DB6800D4202B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8C106DE1871B7DD005465A0 /* NSBundle+Storyboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Storyboards.h"; sourceTree = "<group>"; };
+		F8C106DF1871B7DD005465A0 /* NSBundle+Storyboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Storyboards.m"; sourceTree = "<group>"; };
 		F8F5BB651854EC4C00348242 /* NZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZViewController.h; sourceTree = "<group>"; };
 		F8F5BB661854EC4C00348242 /* NZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZViewController.m; sourceTree = "<group>"; };
 		F8F5BB691854EC4C00348242 /* NZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 			children = (
 				F8F5BB811854EC9800348242 /* NSBundle+AlphaVersion.h */,
 				F8F5BB821854EC9800348242 /* NSBundle+AlphaVersion.m */,
+				F8C106DE1871B7DD005465A0 /* NSBundle+Storyboards.h */,
+				F8C106DF1871B7DD005465A0 /* NSBundle+Storyboards.m */,
 				F8F5BB831854EC9800348242 /* NZBundle.h */,
 				F8F5BB841854EC9800348242 /* NZBundle.m */,
 			);
@@ -216,6 +221,7 @@
 				F8F5BB791854EC4C00348242 /* NZAppDelegate.m in Sources */,
 				F8F5BB771854EC4C00348242 /* NZViewController.m in Sources */,
 				F8F5BB861854EC9800348242 /* NZBundle.m in Sources */,
+				F8C106E01871B7DD005465A0 /* NSBundle+Storyboards.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
