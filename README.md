@@ -11,6 +11,7 @@ It can be used, for example, to add some alphanumeric values ​​in the versio
 [![Build Status](https://api.travis-ci.org/NZN/NZBundle.png)](https://api.travis-ci.org/NZN/NZBundle.png)
 [![Cocoapods](https://cocoapod-badges.herokuapp.com/v/NZBundle/badge.png)](http://beta.cocoapods.org/?q=name%3Anzbundle%2A)
 [![Cocoapods](https://cocoapod-badges.herokuapp.com/p/NZBundle/badge.png)](http://beta.cocoapods.org/?q=name%3Anzbundle%2A)
+[![Analytics](https://ga-beacon.appspot.com/UA-48753665-1/NZN/NZBundle/README.md)](https://github.com/igrigorik/ga-beacon)
 
 ## Requirements
 
