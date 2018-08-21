@@ -4,7 +4,7 @@
   <img src="http://s24.postimg.org/r7y1jch1h/NZBundle.png" alt="NZBundle" title="NZBundle" width="320" height="568">
 </p>
 
-Easily access and manipulate the the Info.plist file of your project.
+Easily access and manipulate the Info.plist file of your project.
 
 It can be used, for example, to add some alphanumeric values ​​in the version of the application APIs that are used by track view analysis.
 
